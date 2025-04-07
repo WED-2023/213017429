@@ -1,193 +1,270 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version={graph-api-version}&appId={your-facebook-app-id}" 
+        nonce="FOKrbAYI">
+    </script>
 
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#photos">My Photos</a></li>
+                <li><a href="#playlist">My Playlist</a></li>
+                <li><a href="#like">Like</a></li>
+                <li><a href="#qrcoder">QR code</a></li>
+                <li><a href="#qa">Q&A</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
+    <main>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            
+        </section>
 
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
+        <section id="photos" class="section">
+            <h2>My Photos</h2>
+            <div class="content">
+                <div class="photo-grid">
+                    <div class="photo-item">
+                        <img src="" alt="Photo 1">
+                    </div>
+                    <div class="photo-item">
+                        <img src="" alt="Photo 2">
+                    </div>
+                    <div class="photo-item">
+                        <img src="" alt="Photo 3">
+                    </div>
+                    <div class="photo-item">
+                        <img src="" alt="Photo 4">
+                    </div>
+                    <div class="photo-item">
+                        <img src="" alt="Photo 5">
+                    </div>
+                    <div class="photo-item">
+                        <img src="" alt="Photo 6">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
+        <section id="playlist" class="section">
+            <h2>My Playlist</h2>
+            <div class="content">
+                <div class="playlist-container">
+                    <iframe width="560" height="315" 
+                        src="" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <p class="playlist-description">
+                        
+                    </p>
+                </div>
+            </div>
+        </section>
 
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
+        <section id="like" class="section">
+            <h2>Like</h2>
+            <div class="content">
+                <div class="like-container">
+                    <p>If you enjoyed my website, please give it a like!</p>
+                    <div class="fb-like" 
+                        data-href=""
+                        data-width=""
+                        data-layout="standard"
+                        data-action="like"
+                        data-size="small"
+                        data-share="true">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
+        <section id="qrcoder" class="section">
+            <h2>QR Code</h2>
+            <div class="content">
+                <div class="qr-container">
+                    <p>Scan this QR code to visit my website on your mobile device:</p>
+                    <img src="" 
+                         alt="QR Code" 
+                         class="qr-code">
+                    <p class="qr-note">Generated using QR Code Generator API</p>
+                </div>
+            </div>
+        </section>
 
+        <section id="qa" class="section">
+            <h2>Q&A</h2>
+            <div class="content">
+                <div class="qa-container">
+                    <div class="qa-item">
+                        <h3>1. What are the three main differences between Web1, Web2, and Web3?</h3>
+                        <div class="web-comparison">
+                            <div class="web-version">
+                                <h4>Web1 (1990-2004)</h4>
+                                <ul>
+                                    <li>Read-only, static content</li>
+                                    <li>Centralized information flow from providers to users</li>
+                                    <li>Limited user interaction with mostly HTML-based websites</li>
+                                </ul>
+                            </div>
+                            <div class="web-version">
+                                <h4>Web2 (2004-Present)</h4>
+                                <ul>
+                                    <li>Read-write, dynamic content with user participation</li>
+                                    <li>Centralized platforms controlling user data</li>
+                                    <li>Social interaction and user-generated content</li>
+                                </ul>
+                            </div>
+                            <div class="web-version">
+                                <h4>Web3 (Emerging)</h4>
+                                <ul>
+                                    <li>Read-write-own, decentralized web</li>
+                                    <li>User ownership of data and digital assets</li>
+                                    <li>AI-driven semantic web with blockchain technology</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa-item">
+                        <h3>2. Example: Searching for "side effects of medications"</h3>
+                        <div class="web-examples">
+                            <div class="example-item">
+                                <h4>Web1 Experience:</h4>
+                                <p>Static medical websites with basic HTML pages listing medication side effects. Information is:</p>
+                                <ul>
+                                    <li>Published by medical institutions only</li>
+                                    <li>Not interactive or personalized</li>
+                                    <li>Rarely updated static pages</li>
+                                    <li>Limited to text and basic images</li>
+                                </ul>
+                            </div>
+                            <div class="example-item">
+                                <h4>Web2 Experience:</h4>
+                                <p>Interactive health platforms with user participation. Features include:</p>
+                                <ul>
+                                    <li>User reviews and experiences</li>
+                                    <li>Discussion forums and comments</li>
+                                    <li>Social media sharing of experiences</li>
+                                    <li>Regular updates based on user feedback</li>
+                                </ul>
+                            </div>
+                            <div class="example-item">
+                                <h4>Web3 Experience:</h4>
+                                <p>Decentralized health data platforms. Offering:</p>
+                                <ul>
+                                    <li>Personal health data ownership</li>
+                                    <li>AI-powered personalized medicine insights</li>
+                                    <li>Verified patient experiences on blockchain</li>
+                                    <li>Direct connection with healthcare providers through smart contracts</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <div class="content">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="smiley">Add a smiley to your message:</label>
+                        <select id="smiley" name="smiley" required>
+                            <option value="">Select a smiley</option>
+                            <option value="😊">😊 Smiling</option>
+                            <option value="😄">😄 Grinning</option>
+                            <option value="😍">😍 Heart Eyes</option>
+                            <option value="🤔">🤔 Thinking</option>
+                            <option value="👍">👍 Thumbs Up</option>
+                            <option value="❤️">❤️ Heart</option>
+                            <option value="😢">😢 Crying</option>
+                            <option value="😔">😔 Sad</option>
+                        </select>
+                    </div>
+              
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+   
+
+    <script type="text/javascript">
+        $(function(){
+            $("#menu a").click(function(e){
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                }, 500);
+            });
+
+            // Handle smiley selection
+            $('#smiley').change(function() {
+                const selectedSmiley = $(this).val();
+                const messageField = $('#message');
+                const currentMessage = messageField.val();
+                
+                // If there's already a smiley at the end, replace it
+                const smileyRegex = /[\uD800-\uDBFF][\uDC00-\uDFFF]|\u263a-\u2764|\ud83c[\udf00-\udfff]|\ud83d[\udc00-\udeff]|\ud83e[\udd00-\uddff]\s*$/;
+                const messageWithoutSmiley = currentMessage.replace(smileyRegex, '').trim();
+                
+                // Add the new smiley if one is selected
+                if (selectedSmiley) {
+                    messageField.val(messageWithoutSmiley + ' ' + selectedSmiley);
+                } else {
+                    messageField.val(messageWithoutSmiley);
+                }
+            });
+
+            // Handle form submission
+            $('#contact-form').submit(function(e) {
+                e.preventDefault();
+                const name = $('#name').val();
+                const email = $('#email').val();
+                const message = $('#message').val();
+                const smiley = $('#smiley').val();
+
+                // Here you would typically send this data to your server
+                alert(`Message sent!\nFrom: ${name}\nEmail: ${email}\nMessage: ${message}`);
+                
+                // Clear the form
+                this.reset();
+            });
+        });
+
+        $(document).scroll(function() {
+            $('#menu').toggleClass('scrolled', $(this).scrollTop() > 100);
+        });
+    </script>
 </body>
 </html>
