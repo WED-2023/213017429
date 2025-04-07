@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Task 1</title>
+    <meta property="og:url"         content="https://wed-2023.github.io/213017429/" />
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="Personal Website - 213017429" />
+    <meta property="og:description" content="My personal website showcasing my work and interests" />
+    <meta property="og:image"       content="https://wed-2023.github.io/213017429/images/profile.jpg" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -11,8 +16,8 @@
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" 
-        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version={graph-api-version}&appId={your-facebook-app-id}" 
-        nonce="FOKrbAYI">
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0" 
+        nonce="random_nonce">
     </script>
 
     <header>
@@ -32,30 +37,79 @@
     <main>
         <section id="about" class="section">
             <h2>About Me</h2>
-            
+            <div class="content">
+                <div class="about-container">
+                    <div class="about-text">
+                        <h3>Carlo Ancelotti 🏆</h3>
+                        <p class="intro">Hello! I'm Carlo Ancelotti, one of football's most successful managers. With a career spanning over four decades, I've had the privilege of managing some of the world's greatest clubs and working with exceptional players.</p>
+                        <div class="achievements">
+                            <h4>My Achievements Include:</h4>
+                            <ul>
+                                <li>4 UEFA Champions League titles as a manager</li>
+                                <li>League titles in 5 different countries</li>
+                                <li>The only manager to win all five major European leagues</li>
+                                <li>Known for my calm demeanor and tactical flexibility</li>
+                            </ul>
+                        </div>
+                        <p class="current-role">Currently, I'm the head coach of Real Madrid, where I continue to pursue excellence in football while maintaining my philosophy of respect, hard work, and tactical innovation.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="photos" class="section">
             <h2>My Photos</h2>
             <div class="content">
-                <div class="photo-grid">
-                    <div class="photo-item">
-                        <img src="" alt="Photo 1">
+                <div class="photos-wrapper">
+                    <div class="photo-categories">
+                        <h3>My Journey Through Football</h3>
                     </div>
-                    <div class="photo-item">
-                        <img src="" alt="Photo 2">
+                    <div class="photo-grid">
+                        <div class="photo-item">
+                            <img src="images/fun moments.webp" alt="Fun Moments in Career">
+                            <div class="photo-overlay">
+                                <h4>Fun Moments</h4>
+                                <p>Enjoying the beautiful game</p>
+                            </div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="images/hobbies.jpg" alt="Personal Hobbies">
+                            <div class="photo-overlay">
+                                <h4>Hobbies</h4>
+                                <p>Life beyond football</p>
+                            </div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="images/my family.jpeg" alt="Family Moments">
+                            <div class="photo-overlay">
+                                <h4>Family</h4>
+                                <p>Precious moments with loved ones</p>
+                            </div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="images/my old days.jpg" alt="Early Career Days">
+                            <div class="photo-overlay">
+                                <h4>Early Days</h4>
+                                <p>Where it all began</p>
+                            </div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="images/personal trophy.jpg" alt="Trophy Celebrations">
+                            <div class="photo-overlay">
+                                <h4>Victories</h4>
+                                <p>Celebrating success</p>
+                            </div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="images/spiceal moments.jpg" alt="Special Career Moments">
+                            <div class="photo-overlay">
+                                <h4>Special Moments</h4>
+                                <p>Unforgettable memories</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="photo-item">
-                        <img src="" alt="Photo 3">
-                    </div>
-                    <div class="photo-item">
-                        <img src="" alt="Photo 4">
-                    </div>
-                    <div class="photo-item">
-                        <img src="" alt="Photo 5">
-                    </div>
-                    <div class="photo-item">
-                        <img src="" alt="Photo 6">
+                    <div class="photo-description">
+                        <p>A visual journey through my career and life: from my early days as a player to memorable moments with family and celebrating major achievements in football. Each photo tells a story of dedication, passion, and the beautiful game.</p>
                     </div>
                 </div>
             </div>
@@ -66,13 +120,13 @@
             <div class="content">
                 <div class="playlist-container">
                     <iframe width="560" height="315" 
-                        src="" 
+                        src="https://www.youtube.com/embed/videoseries?list=PL2788304DC59DBEB4" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen>
                     </iframe>
                     <p class="playlist-description">
-                        
+                        Check out my favorite music collection!
                     </p>
                 </div>
             </div>
@@ -83,13 +137,15 @@
             <div class="content">
                 <div class="like-container">
                     <p>If you enjoyed my website, please give it a like!</p>
+                    <!-- Facebook Like Button v1.0 -->
                     <div class="fb-like" 
-                        data-href=""
+                        data-href="https://wed-2023.github.io/213017429/"
                         data-width=""
-                        data-layout="standard"
+                        data-layout="button_count"
                         data-action="like"
-                        data-size="small"
-                        data-share="true">
+                        data-size="large"
+                        data-share="true"
+                        data-show-faces="true">
                     </div>
                 </div>
             </div>
@@ -100,7 +156,7 @@
             <div class="content">
                 <div class="qr-container">
                     <p>Scan this QR code to visit my website on your mobile device:</p>
-                    <img src="" 
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wed-2023.github.io/213017429/" 
                          alt="QR Code" 
                          class="qr-code">
                     <p class="qr-note">Generated using QR Code Generator API</p>
@@ -183,18 +239,15 @@
         <section id="contact" class="section">
             <h2>Contact Me</h2>
             <div class="content">
-                <form id="contact-form">
+                <form id="contact-form" onsubmit="return sendEmail(event)">
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
                     </div>
+                    
                     <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="message">Message:</label>
-                      <textarea id="message" name="message" required></textarea>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
                     </div>
                     <div class="form-group">
                         <label for="smiley">Add a smiley to your message:</label>
@@ -210,7 +263,6 @@
                             <option value="😔">😔 Sad</option>
                         </select>
                     </div>
-              
                     <button type="submit">Send Message</button>
                 </form>
             </div>
@@ -245,22 +297,32 @@
                     messageField.val(messageWithoutSmiley);
                 }
             });
-
-            // Handle form submission
-            $('#contact-form').submit(function(e) {
-                e.preventDefault();
-                const name = $('#name').val();
-                const email = $('#email').val();
-                const message = $('#message').val();
-                const smiley = $('#smiley').val();
-
-                // Here you would typically send this data to your server
-                alert(`Message sent!\nFrom: ${name}\nEmail: ${email}\nMessage: ${message}`);
-                
-                // Clear the form
-                this.reset();
-            });
         });
+
+        // Handle form submission and email sending
+        function sendEmail(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+            const smiley = document.getElementById('smiley').value;
+            
+            // Construct email body
+            const emailBody = `Hello i am ${name}
+My message is:
+${message}`;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:hdiab16@gmail.com?subject=Contact Form Submission from ${name}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Clear the form
+            document.getElementById('contact-form').reset();
+            
+            return false;
+        }
 
         $(document).scroll(function() {
             $('#menu').toggleClass('scrolled', $(this).scrollTop() > 100);
