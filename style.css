@@ -247,7 +247,7 @@ footer {
 	border-radius: 8px;
 	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 	padding: 3rem;
-	max-width: 800px;
+	max-width: 900px;
 	margin: 0 auto;
 }
 
@@ -262,6 +262,14 @@ footer {
 	text-align: center;
 }
 
+.about-text h4 {
+	color: #3498db;
+	font-size: 1.5rem;
+	margin: 2rem 0 1rem;
+	border-bottom: 2px solid #f0f0f0;
+	padding-bottom: 0.5rem;
+}
+
 .about-text .intro {
 	font-size: 1.2rem;
 	line-height: 1.8;
@@ -269,7 +277,7 @@ footer {
 	margin-bottom: 2rem;
 }
 
-.achievements {
+.personal-info, .achievements, .fun-facts {
 	background: #f8f9fa;
 	padding: 2rem;
 	border-radius: 8px;
@@ -277,15 +285,18 @@ footer {
 	border-left: 4px solid #3498db;
 }
 
-.achievements h4 {
-	color: #2c3e50;
-	margin-bottom: 1rem;
-	font-size: 1.3rem;
+.personal-info {
+	border-left-color: #e74c3c;
+}
+
+.fun-facts {
+	border-left-color: #2ecc71;
 }
 
 .about-text ul {
 	list-style-type: none;
 	padding-left: 0;
+	margin: 1rem 0;
 }
 
 .about-text ul li {
@@ -293,10 +304,23 @@ footer {
 	padding-left: 2rem;
 	position: relative;
 	font-size: 1.1rem;
+	line-height: 1.6;
 }
 
-.about-text ul li:before {
+.achievements ul li:before {
 	content: "🏆";
+	position: absolute;
+	left: 0;
+}
+
+.family-list li:before {
+	content: "👨‍👩‍👧‍👦";
+	position: absolute;
+	left: 0;
+}
+
+.fun-facts ul li:before {
+	content: "✨";
 	position: absolute;
 	left: 0;
 }
@@ -306,6 +330,10 @@ footer {
 	color: #2c3e50;
 	line-height: 1.8;
 	margin-top: 2rem;
+	padding: 2rem;
+	background: #f8f9fa;
+	border-radius: 8px;
+	border-left: 4px solid #9b59b6;
 }
 
 /* Photos Section */
@@ -406,13 +434,22 @@ footer {
 		font-size: 2rem;
 	}
 
+	.about-text h4 {
+		font-size: 1.3rem;
+	}
+
 	.about-text .intro,
 	.current-role {
 		font-size: 1.1rem;
 	}
 
-	.achievements {
+	.personal-info, .achievements, .fun-facts {
 		padding: 1.5rem;
+		margin: 1.5rem 0;
+	}
+
+	.about-text ul li {
+		font-size: 1rem;
 	}
 
 	.photo-grid {
